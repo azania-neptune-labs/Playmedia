@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<!---->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+</script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<!---->
+<script href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+<script href='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="script.js"></script>
+   <script src="https://www.google.com/jsapi"></script>
+   
+   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body >
+  <div id="popup_box">    <!-- OUR PopupBox DIV-->
+    <a id="popupBoxClose">Close <span id="countDown"></span></a>  
+    <h1>This is a Popup</h1>  
+</div>
+
+  <div id="container"  >
+    <div class="dropdown" style="width:30%">
+  
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    MY Channels
+  </button>
+    
+  
+  <div class="dropdown-menu scrollable-menu" id="list"  aria-labelledby="dropdownMenuButton"   role="menu" style="backround-color:traparent;">
+    <li> <a class="btn btn-primary" data-toggle="modal" data-target="#modalIMG" href="#">Close Menu</a></li>
+  <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG1"><img src="26.png" alt=""  style="width:100%; margin:0px"></a>
+    <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG2" href="#"><img src="27.png" alt="" style="width:100%; margin:0px"></a>
+    <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG3" data-toggle="modal" href="#"><img src="28.png" alt="" style="width:100%; margin:0px"></a>
+    <a class="dropdown-item" href="#"><img src="Music.png" alt="" style="width:100%; margin:0px" ></a>
+    <a class="dropdown-item" id="div5" href="#"><img src="comedy.png" alt="" style="width:100%; margin:0px"></a>
+    <a class="dropdown-item"  id="div6" href="#"><img src="inspiration.png" alt="" style="width:100%; margin:0px"></a>
+  </div>
+</div>
+
+
+    <video autoplay loop muted class="bgvid" id="bgvid"  width="100%">
+      <source src="Eat.mp4" type="video/mp4">
+    </video>
+   <div class="round">
+ <div id="cta">
+  <span class="arrow primera next"></span>
+  <span class="arrow primera next"></span>
+  <h1><a class="trigger_popup_fricc" >More Channels</a></h1>
+ </div></div>
+     <div id="ads" align="center" >
+ 
+</div>
+
+<!-- modal-->
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../Background-video-player/IF Ads/1.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--1-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG1" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../Background-video-player/IF Ads/2.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--2-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG2" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../Background-video-player/IF Ads/3.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--3-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG3" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../Background-video-player/IF Ads/4.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!---->
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <div id="slideshow">
+   <div class="slideitem current">
+     <img src="http://basik.ru/images/1920x1080_63/15_1920x1080.jpg">
+   </div>
+   <div class="slideitem">
+     <img src="http://i2.fastpic.ru/big/2010/0321/36/49436230f02b95ce11f903fc8f683936.jpg">
+   </div>
+   <div class="slideitem">
+     <img src="http://k37.kn3.net/1B107A604.jpg">
+   </div>
+   
+    
+</div>
+    </div>
+</div>
+</div>
+  </body>
+  
+</html>
+<script>
+ (function($) {
+showSwal = function(type) {
+'use strict';
+if (type === 'auto-close') {
+swal({
+title: 'I will close in 2 seconds!',
+imageUrl:'26.png',
+timer: 5000,
+button: false
+}).then(
+function() {},
+// handling the promise rejection
+function(dismiss) {
+if (dismiss === 'timer') {
+console.log('I was closed by the timer')
+}
+}
+)
+}else{
+swal("Error occured !");
+}
+}
+
+})(jQuery);
+
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+

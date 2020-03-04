@@ -1,0 +1,483 @@
+body {
+    background-image: url('../test.jpg');
+    background-size: cover;
+}
+
+.bgvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+    /*-webkit-filter: grayscale(70%);
+  filter: grayscale(70%);*/
+    -webkit-filter: sepia(70%);
+    filter: sepia(70%);
+}
+
+
+/*close head*/
+
+.img-replace {
+    width: 40px;
+    height: 40px;
+    background: url("../26.png") no-repeat;
+}
+
+.img-replace:hover {
+    background: url("../27.png") no-repeat;
+}
+
+
+/**/
+
+.dropdown-menu.pull-left {
+    left: 0;
+}
+
+.scrollable-menu {
+    /*height: auto;
+    max-height: 100px;
+    overflow-x: hidden;*/
+    width: 500px;
+    height: 400px;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+
+/**/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 5px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: blue;
+}
+
+
+/**/
+
+.dropdown-menu .show {
+    margin: 0;
+    background-color: transparent;
+}
+
+video {
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    margin-top: 0px;
+}
+
+a {
+    margin-left: 30%;
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+
+/* new css*/
+
+
+/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+
+/* Tabled Portrait */
+
+@media screen and (orientation:portrait) {
+    body {
+        -webkit-transform: rotate(180deg);
+        -webkit-transform-origin: 50% 50%;
+        transform: rotate(90deg);
+        transform-origin: 50% 50%;
+        /**/
+        margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+    }
+}
+
+
+}
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc {
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.hover_bkgr_fricc .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.hover_bkgr_fricc>div {
+    background-color: transparent;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: bottom;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+    margin-left: 0%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.top {
+    vertical-align: top;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+/* Popup box BEGIN */
+.round {
+    position: absolute;
+    border: 0px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+#cta {
+    width: 100%;
+    cursor: auto;
+    position: absolute;
+}
+#cta .arrow {
+    left: 30%
+}
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    top: 35px;
+}
+.sedunda {
+    margin-left: 8px;
+}
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+    
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+    
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.round:hover .arrow {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.round:hover .arrow.primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* slider css*/
+#slideshow {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 1% 1% 56.25% 1%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+#slideshow>div {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 10px;
+    bottom: 10px;
+}
+#slideshow>div>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+#slideshow:hover i,
+#slideshow:hover .slider-dots {
+    opacity: 1;
+}
+.slidebtn {
+    z-index: 99;
+    background: transparent;
+    outline: none;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 0 10px 0 10px;
+}
+.slidebtn:active,
+.slidedtn:focus {
+    outline: none;
+}
+.slidebtn i {
+    color: #FFF;
+    font-size: 72px;
+    opacity: 0.2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.prev {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+.next {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.slider-dots {
+    opacity: 0.2;
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0);
+    z-index: 99;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.slider-dots li {
+    color: #000;
+    display: inline;
+    font-size: 48px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.slider-dots li.active-dot {
+    color: #fff;
+}
+
+/*timer ad*/
+#popup_box {
+    display: none;
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    z-index: 100;
+    padding: 15px;
+    font-size: 15px;
+    -moz-box-shadow: 0 0 5px;
+    -webkit-box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px;
+}
+#popupBoxClose {
+    background: #369;
+    color: #fff;
+    padding: 10px;
+    margin: -15px -15px 10px -15px;
+    display: block;
+    position: relative;
+    text-align: right;
+}
+#popupBoxClose #countDown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    color: #369;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*timer2*/
+#popup_box {
+    display: none;
+    /* Hide the DIV */
+    
+    position: fixed;
+    _position: absolute;
+    /* hack for internet explorer 6 */
+    
+    height: 500px;
+    width: 500px;
+    background: ;
+    left: 400px;
+    top: 50px;
+    z-index: 100;
+    /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+    
+    margin-left: 25px;
+    /* additional features, can be omitted */
+    
+    border: 2px;
+    padding: 15px;
+    font-size: 15px;
+    -moz-box-shadow: 0 0 5px;
+    -webkit-box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px;
+}
+#container {
+    /*Sample*/
+    
+    width: 100%;
+    height: 100%;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+#ads {
+    width: 50%;
+    height: 50%;
+}
+
+/* This is for the positioning of the Close Link */
+#popupBoxClose {
+    font-size: 20px;
+    line-height: 15px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    color: #6fa5e2;
+    font-weight: 500;
+}
